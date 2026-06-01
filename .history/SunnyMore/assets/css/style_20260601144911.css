@@ -3008,14 +3008,8 @@ h6 span::before {
   background-color: rgba(255, 255, 255, 0.97);
 }
 
-/* Offcanvas (sidebar) should appear above the fixed header */
+/* Keep offcanvas transitions smooth when header becomes fixed */
 .offcanvas {
   transition: transform 0.3s ease;
-  z-index: 10001;
-}
-
-/* Ensure open state stays above header */
-.offcanvas.offcanvas-open {
-  z-index: 10001;
 }
 
